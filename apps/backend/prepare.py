@@ -42,7 +42,7 @@ class userprepare(object):
         ip = zhuji.host.ip_addr
         port = zhuji.host.port
         print("login %s@%s" % (username, ip))
-        pas = 'sshpass -p %s ssh %s@%s -o "StricHostKeyChecking no"' %(password,username,ip)
+        pas = 'sshpass -p %s ssh %s@%s -o "StrictHostKeyChecking no"' %(password,username,ip)
         ssh_instance = subprocess.run(pas,shell=True)
         print("logout")
 
