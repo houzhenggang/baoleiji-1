@@ -83,7 +83,7 @@ class userprepare(object):
                 if len(str(number).strip()) ==0:
                     print((str(number)))
                     continue
-                if isinstance(number,int):
+                if number.isdgit():
 
                     if number<hg_number and number>=0:
 
