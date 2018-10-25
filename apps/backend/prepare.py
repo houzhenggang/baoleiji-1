@@ -58,7 +58,7 @@ class userprepare(object):
                 print("$$$$$$$$$$$$$$$$zhujizu %s$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" %(hg_number))
                 for index,host_group in enumerate(host_groups):
 
-                    print("{0} {1}") .format(index,host_group.name)
+                    print("{0} {1}".format(index,host_group.name))
                 bind_hosts = self.user.bindhost_set.all()
                 bh_number = bind_hosts.count()
                 global bh_number
