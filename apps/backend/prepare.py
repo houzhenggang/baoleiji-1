@@ -80,10 +80,10 @@ class userprepare(object):
                 if number == "b":
                     break
                 # print((str(number)))
-                if len(str(number).strip()) ==0:
+                if len(number.strip()) ==0:
                     print((str(number)))
                     continue
-                if number.isdgit():
+                if int(number.strip()).isdgit():
 
                     if number<hg_number and number>=0:
 
