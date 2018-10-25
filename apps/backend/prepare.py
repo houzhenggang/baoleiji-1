@@ -77,6 +77,7 @@ class userprepare(object):
                 #xuanze
                 # while True:
                 number = input("please select:")
+                print("exit:b")
                 if number == "b":
                     break
                 # print((str(number)))
@@ -122,8 +123,8 @@ class userprepare(object):
 
 if __name__=="__main__":
     sys.path.insert(0, os.path.split(os.path.split(os.getcwd())[0])[0])
-    # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "baoshijie.settings")
-    os.environ['DJANGO_SETTINGS_MODULE']="baoshijie.settings"
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "baoshijie.settings")
+    # os.environ['DJANGO_SETTINGS_MODULE']="baoshijie.settings"
     import django
     django.setup()
     from source.models import UserProfile
