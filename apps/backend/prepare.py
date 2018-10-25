@@ -84,6 +84,7 @@ class userprepare(object):
                     print((str(number)))
                     continue
                 if number.strip().isdigit():
+                    number = int(number)
 
                     if number<hg_number and number>=0:
 
@@ -100,12 +101,12 @@ class userprepare(object):
                                 if number == "b":
                                     break
                                 # print((str(number)))
-                                if len(str(number).strip()) == 0:
+                                if len(number.strip()) == 0:
 
                                     continue
-                                if isinstance(number, int):
+                                if number.isdigit():
 
-
+                                    number = int(number)
                                     if number < count and number >= 0:
                                         obj=selected_hostgroup.bindhost_set.all()[number]
                                         self.opreation(obj)
