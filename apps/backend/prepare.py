@@ -61,7 +61,7 @@ class userprepare(object):
                     print("{0} {1}".format(index,host_group.name))
                 bind_hosts = self.user.bindhost_set.all()
                 bh_number = bind_hosts.count()
-                
+
                 print("$$$$$$$$$$$$$$$$dangezhuji %s$$$$$$$$$$$$$$" %(bh_number))
                 for bind_host in bind_hosts:
                     for host in host_groups:
@@ -83,7 +83,7 @@ class userprepare(object):
                 if len(number.strip()) ==0:
                     print((str(number)))
                     continue
-                if number.strip().isdgit():
+                if number.strip().isdigit():
 
                     if number<hg_number and number>=0:
 
