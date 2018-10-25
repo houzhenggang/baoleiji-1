@@ -88,6 +88,7 @@ class userprepare(object):
                     if number<hg_number and number>=0:
 
                         selected_hostgroup= host_groups[number]
+                        print(selected_hostgroup)
                         count = selected_hostgroup.bindhost_set.all()#zhu ji zu bao han de zhu ji
                         for index,bind_host in enumerate(selected_hostgroup.bindhost_set.all()):
                             print("%s.%s-%s@%s" % (index,
